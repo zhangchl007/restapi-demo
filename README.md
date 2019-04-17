@@ -7,6 +7,8 @@ It's a demo to deploy restapi-demo on  cloud foundry
  cd  restapi-demo
  cf push
 
+for example:
+
  cf apps
  Getting apps in org redhat / space test as jimmy...
  OK
@@ -16,7 +18,7 @@ It's a demo to deploy restapi-demo on  cloud foundry
 
 curl http://api-demo.cfapps.haas-421.pez.pivotal.io/people
 
-OS deployment
+OS/Other deployment
 
 cd $GOPATH
 go get github.com/zhangchl007/restapi-demo
