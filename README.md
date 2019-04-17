@@ -1,21 +1,36 @@
-Golang learning 
 
-I will spend some time to learn golang everyday. keep on it
+It's a demo to deploy cloud foundry
 
 restapi-demo
 
 ```
+ cf api https://api.run.haas-421.pez.pivotal.io
+ cf login
+ cd  restapi-demo
+ cf push
+
+ cf apps
+ Getting apps in org redhat / space test as jimmy...
+ OK
+
+ name       requested state   instances   memory   disk   urls
+ api-demo   started           1/1         64M      1G     api-demo.cfapps.haas-421.pez.pivotal.io
+
+curl http://api-demo.cfapps.haas-421.pez.pivotal.io/people
+
+OS deployment
+
 cd $GOPATH
-go get github.com/zhangchl007/restapi
+go get github.com/zhangchl007/restapi-demo
 
 go build 
-go install github.com/zhangchl007/restapi
+go install github.com/zhangchl007/restapi-demo
 
 ls -l $GOPATH/bin
 total 9028
--rwxr-xr-x. 1 root root 7224691 Aug  8 02:17 restapi
+-rwxr-xr-x. 1 root root 7224691 Aug  8 02:17 restapi-demo
 
-./restapi
+./restapi-demo
 
 GRUD support 
 # curl http://192.168.233.134:9000/people
