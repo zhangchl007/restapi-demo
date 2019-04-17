@@ -1,7 +1,5 @@
 
-It's a demo to deploy cloud foundry
-
-restapi-demo
+It's a demo to deploy restapi-demo on  cloud foundry
 
 ```
  cf api https://api.run.haas-421.pez.pivotal.io
