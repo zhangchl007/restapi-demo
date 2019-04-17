@@ -1,0 +1,4 @@
+package: github.com/zhangchl007/restapi-demo
+import:
+- package: github.com/gorilla/mux
+  version: ~1.7.1

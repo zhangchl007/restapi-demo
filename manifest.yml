@@ -1,0 +1,9 @@
+---
+applications:
+  - name: api-demo
+    instances: 1
+    memory: 64MB
+    host: api-demo
+    buildpack: https://github.com/cloudfoundry/go-buildpack.git
+    env:
+      GOPACKAGENAME : api-demo

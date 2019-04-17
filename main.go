@@ -20,7 +20,7 @@ type Address struct {
 	State string `json:"state,omitempty"`
 }
 
-var  people []Person 
+var  people []Person
 
 func GetPersonEndpoint(w http.ResponseWriter, req *http.Request) {
 	params :=mux.Vars(req)
@@ -65,6 +65,6 @@ func main() {
 	r.HandleFunc("/people/{id}",GetPersonEndpoint).Methods("GET")
 	r.HandleFunc("/people/{id}",CreatePersonEndpoint).Methods("POST")
 	r.HandleFunc("/people/{id}",DeletePersonEndpoint).Methods("DELETE")
-	log.Fatal(http.ListenAndServe(":9000",r))
+	log.Fatal(http.ListenAndServe(":8080",r))
 
 }
